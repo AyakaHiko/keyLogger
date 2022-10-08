@@ -124,7 +124,9 @@ namespace keyLogger
         }
         private void logKeysCheck_CheckedChanged(object sender, EventArgs e)
         {
-            logWordsCheck.Enabled = logKeysCheck.Checked;
+
+            if(!logKeysCheck.Checked)
+                logWordsCheck.Checked=false;
             App.Instance.LogKeys = logKeysCheck.Checked;
         }
 
