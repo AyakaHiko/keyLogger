@@ -223,6 +223,12 @@ namespace keyLogger
                 return false;
             }
 
+            if (logWordTextBox.Text.Contains(' '))
+            {
+                tip.Show("Word mustn't contain white space", logWordTextBox);
+                return false;
+            }
+
             return true;
         }
 
