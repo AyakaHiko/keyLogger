@@ -188,7 +188,7 @@ namespace keyLogger
             var word = logWordsBox.SelectedItem as string;
             KeyLogger.Instance.RemoveWord(word);
             _updWords();
-            =
+            
         }
 
         private void updWordBtn_Click(object sender, EventArgs e)
