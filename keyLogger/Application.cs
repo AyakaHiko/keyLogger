@@ -72,9 +72,9 @@ namespace keyLogger
                 _logWords = value;
                 if (!IsWorking) return;
                 if (value)
-                    KeyLogger.Instance.StartLogKeys();
+                    KeyLogger.Instance.StartObserveWords();
                 else
-                    KeyLogger.Instance.StopLogKeys();
+                    KeyLogger.Instance.StopObserveWords();
 
             }
         }
