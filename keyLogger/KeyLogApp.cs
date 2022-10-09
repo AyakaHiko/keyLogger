@@ -127,6 +127,7 @@ namespace keyLogger
 
             if(!logKeysCheck.Checked)
                 logWordsCheck.Checked=false;
+            logWordsCheck.Enabled = logKeysCheck.Checked;
             App.Instance.LogKeys = logKeysCheck.Checked;
         }
 
